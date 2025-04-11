@@ -1,91 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sparky Lube</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SparkyLube</title>
 </head>
 <body>
-
-  <header>
-    <div class="nav-container">
-      <h1>Sparky Lube</h1>
-      <nav>
-        <button onclick="scrollToSection('promo')">Promos</button>
-        <button onclick="scrollToSection('about')">About</button>
-        <button onclick="scrollToSection('reviews')">Reviews</button>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <h2>We Change Your Oil, Not Your Schedule</h2>
-    <p>We offer a quality oil change that is warranty approved and backed by over 25 years of automotive experience!</p>
-    <a href="tel:5197700777" class="call-btn">Call Us</a>
-  </section>
-
-  <section id="promo" class="promo">
-    <h3>Current Promos</h3>
-    <div class="promo-box">
-      <p><strong>$10 OFF</strong> On Rim Tire Swap</p>
-      <p><strong>ANY OIL CHANGE</strong> Starting From $49.99</p>
-      <p>Valid until <span id="expiry">July 15, 2025</span></p>
-      <p class="countdown" id="countdown"></p>
-      <small>Can not be combined with any other offer.</small>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <h3>About Us</h3>
-    <p>
-      SPARKY LUBE was established with the aim of offering unparalleled convenience and top-notch service in the fast-paced oil change industry.
-      Having a combined experience of over six decades in the automotive field, our team is dedicated to providing customers with trustworthy,
-      quick, and effective service. We take great pride in delivering a customer-centric experience that is characterized by honesty, promptness, and efficiency.
-    </p>
-  </section>
-
-  <section id="reviews" class="reviews">
-    <h3>Testimonials</h3>
-    <p><a href="https://www.google.com/maps/place/Sparky+Lube/@43.1783813,-80.2803968,17z" target="_blank">See live Google Reviews</a></p>
-    <div class="review">
-      <p><strong>Jeff Mitchell</strong></p>
-      <p><em>2023-11-21</em></p>
-      <blockquote>Absolutely amazing service! 10/10.<br>In and out in about 15 mins.<br>Excellent prices.</blockquote>
-    </div>
-  </section>
-
-  <footer>
-    <p>We're FASTER... And we're BETTER...</p>
-    <p>275 King George, Brantford — <a href="tel:5197700777">519-770-0777</a></p>
-  </footer>
-
-  <script>
-    function scrollToSection(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Countdown Timer
-    const countdownEl = document.getElementById('countdown');
-    const expiryDate = new Date('2025-07-15T23:59:59');
-
-    function updateCountdown() {
-      const now = new Date();
-      const diff = expiryDate - now;
-
-      if (diff <= 0) {
-        countdownEl.innerText = 'Expired';
-        return;
-      }
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      countdownEl.innerText = `Expires in ${days} day${days !== 1 ? 's' : ''}`;
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000 * 60 * 60); // update every hour
-  </script>
-
+  <h1>Welcome to the Brantford SparkyLube Website</h1>
+  <p>We Are Currently Under Construction <br>Contact Us At +1 (519) 770-0777</br></p>
 </body>
 </html>
