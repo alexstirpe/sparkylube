@@ -1,0 +1,120 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  header {
+    background-color: #06111f;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #00b4d8;
+  }
+  
+  header span {
+    color: #ffd60a;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .hero p {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero button {
+    background-color: #ffd60a;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #ffc300;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #1b263b;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .about h3 {
+    color: #00b4d8;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .about p {
+    color: #cfd8dc;
+    font-size: 1rem;
+  }
+  
+  /* Google Reviews Section */
+  .reviews {
+    background-color: #0d1b2a;
+    padding: 2rem 1rem;
+    border-top: 1px solid #33475b;
+  }
+  
+  .reviews h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00b4d8;
+  }
+  
+  .review-card {
+    background-color: #1b263b;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .review-card strong {
+    color: #ffd60a;
+  }
+  
+  .review-card .date {
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+  
+  .review-card .stars {
+    color: gold;
+    margin: 0.5rem 0;
+  }  
