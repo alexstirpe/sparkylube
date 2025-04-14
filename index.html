@@ -1,13 +1,141 @@
+<!--
+  ============================================================
+  Project Name: "The Internship" — Sparky Lube Website Project
+  Description: A fully original website created using basic HTML, CSS,
+               and JavaScript elements for a locally owned and operated 
+               Canadian oil shop — Sparky Lube. Designed and built as a
+               collaborative internship project.
+
+  Created By:
+    • Alexandria A. Stirpe
+    • Mohammed D. Mounir
+
+  Date: April 2025
+  Location: Ontario, Canada
+
+  Ownership: This site was developed in partnership with Sparky Lube,
+             with full approval and contribution from the business.
+             All content and design elements are original and tailored
+             to represent the brand's local presence and mission.
+
+  Copyright © 2025 Sparky Lube & Molex | All Rights Reserved.
+
+  ✨ Built with pride. Fueled by community. Powered by vision. ✨
+  ============================================================
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>SparkyLube</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sparky Lube</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to the Brantford SparkyLube Website</h1>
-  <p>We Are Currently Under Construction <br>Contact Us At +1 (519) 770-0777</br></p>
+  <!-- Header / Logo -->
+  <header>
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Sparky Lube Logo" class="logo-img" />
+    </div>
+  </header>
+
+  <!-- Call To Action -->
+  <section class="call-section">
+    <div class="description">
+      <strong>We Change Your Oil, Not Your Schedule</strong><br>
+      We offer a quality oil change that is warranty approved and backed by over 25 years of automotive experience!
+    </div>
+    <a href="tel:5197700777" class="call-btn">📞 Call Us: (519) 770-0777</a>
+    <p class="address">275 King George Rd, Brantford, ON N3L 5L1</p>
+  </section>
+
+<!-- Promo Section -->
+<section class="promo">
+  <div class="promo-items">
+    <!-- Promo 1 -->
+    <div class="promo-box">
+      <img src="assets/SL_Promo_April2025.png" alt="Promo Coupon" class="promo-img">
+      <button class="print-btn" onclick="window.print()">🖨️ Print/Save</button>
+    </div>
+
+    <!-- Promo 2 -->
+    <div class="promo-box">
+      <img src="assets/TireSwap.png" alt="Tire Swap Service" class="promo-img">
+    </div>
+
+    <!-- Promo 3 -->
+    <div class="promo-box">
+      <img src="assets/B1G1Wiper.png" alt="B1G1 Wiper Blades" class="promo-img">
+    </div>
+  </div>
+
+  <div id="countdown" class="countdown"></div>
+</section>
+
+  <!-- Business Description -->
+  <section class="business-desc">
+    <p>
+      <strong>SPARKY LUBE</strong> was established with the aim of offering unparalleled convenience and top-notch service in the fast-paced oil change industry. Having a combined experience of over six decades in the automotive field, our team is dedicated to providing customers with trustworthy, quick, and effective service. We take great pride in delivering a customer-centric experience that is characterized by honesty, promptness, and efficiency.
+    </p>
+  </section>
+
+  <!-- Map & Directions Section -->
+  <section class="map-wrapper">
+    <div class="map-instructions">
+      📍🚗 Click your preferred app for instant directions to Sparky Lube! 🚗🏠
+    </div>
+
+    <div class="map-buttons">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=275+King+George+Rd+Brantford" target="_blank" class="map-button google">
+        <img src="assets/google-maps-logo.png" alt="Google Maps">
+      </a>
+      <a href="https://waze.com/ul?ll=43.1783813,-80.2803968&navigate=yes" target="_blank" class="map-button waze">
+        <img src="assets/waze-logo.png" alt="Waze">
+      </a>
+      <a href="http://maps.apple.com/?daddr=275+King+George+Rd,+Brantford" target="_blank" class="map-button apple">
+        <img src="assets/apple-maps-logo.png" alt="Apple Maps">
+      </a>
+    </div>
+
+    <div class="map-embed">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d363.6864460091495!2d-80.28050873697664!3d43.17819548620472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c6fe30a93a857%3A0x745a2248c435417f!2sSparky%20Lube!5e0!3m2!1sen!2sus!4v1744590333780!5m2!1sen!2sus"
+
+        width="100%" height="350" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>We're FASTER... And we're BETTER...</p>
+    <p>275 King George, Brantford — <a href="tel:5197700777">519-770-0777</a></p>
+  </footer>
+
+  <!-- Optional Countdown Script -->
+  <script>
+    const countdownDate = new Date("April 30, 2025 23:59:59").getTime();
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "Promotion ended! Thank you for choosing your locally owned and operated Sparky Lube.";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `⏳ Promo ends in: ${days}d ${hours}h ${minutes}m ${seconds}s ⏳`;
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
