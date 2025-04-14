@@ -24,6 +24,9 @@
   ============================================================
 */
 
+body {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -83,7 +86,13 @@ header {
   text-decoration: none;
   display: inline-block;
   transition: background 0.3s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .call-btn:hover {
   background-color: #e6b800;
