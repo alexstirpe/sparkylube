@@ -6,8 +6,8 @@
                collaborative internship project.
 
   Created By:
-    • Alexandria A. Stirpe
-    • Mohammed D. Mounir
+    • Alexandria S.
+    • Mohammed M.
 
   Date: April 2025
   Location: Ontario, Canada
@@ -25,16 +25,16 @@
 # sparkylube.ca
 Website for Oil Change Service Shop in Brantford, ON
 
---- CONTACT VIA GITHUB ONLY ---
+## --- CONTACT VIA GITHUB ONLY ---
 
 # The Internship — Sparky Lube Website Project
 
 ## 📌 Project Overview
-"The Internship" is a web development collaboration between Alexandria A. Stirpe and Mohammed D. Mounir and Sparky Lube — a locally owned and operated Canadian oil shop. The goal was to create a clean, responsive, fully original front-end website that reflects Sparky Lube's brand identity, values, and community presence. All assets and code were crafted from scratch using HTML, CSS, and JavaScript.
+"The Internship" is a web development collaboration between Alexandria S. and Mohammed M. and Sparky Lube — a locally owned and operated Canadian oil shop. The goal was to create a clean, responsive, fully original front-end website that reflects Sparky Lube's brand identity, values, and community presence. All assets and code were crafted from scratch using HTML, CSS, and JavaScript.
 
 ## 🧑‍💼 Collaborators
-- **Alexandria A. Stirpe**
-- **Mohammed D. Mounir**
+- **Alexandria S.**
+- **Mohammed M.**
 
 ## 🛠️ Technologies Used
 - **HTML5**
@@ -113,8 +113,7 @@ The design and structure were reviewed and approved in collaboration with the bu
 ## ⚖️ License & Ownership
 ```
 © 2025 Sparky Lube & Molex. All rights reserved.
-Developed exclusively by Alexandria A. Stirpe & Mohammed D. Mounir.
-Do not replicate, reuse, or distribute without written permission.
+Developed exclusively by Alexandria S. & Mohammed M.
 ```
 
 ## 📢 Final Notes
