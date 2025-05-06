@@ -76,7 +76,7 @@
   <!-- Business Description -->
   <section class="business-desc">
     <p>
-      <strong>SPARKY LUBE</strong> was established to offer unparalleled convenience and top-notch service in the fast-paced oil change industry. With over six decades of combined automotive experience, our team is dedicated to providing trustworthy, quick, and effective service. We take pride in delivering a customer-centric experience defined by honesty, promptness, and efficiency.    </p>
+      <strong>SPARKY LUBE</strong> was established to offer unparalleled convenience and top-notch service in the fast-paced oil change industry. With over six decades of combined automotive experience, our team is dedicated to providing trustworthy, quick, and effective service. We take pride in delivering a customer-centric experience defined by honesty, urgency, and efficiency.    </p>
   </section>
 
   <!-- Map & Directions Section -->
@@ -113,7 +113,7 @@
     <p>  Copyright © 2025 Sparky Lube | All Rights Reserved.    </p>
   </footer>
 
-  <!-- Optional Countdown Script -->
+  <!-- Countdown Script -->
   <script>
     const countdownDate = new Date("July 15, 2025 23:59:59").getTime();
     const countdownElement = document.getElementById("countdown");
@@ -132,7 +132,16 @@
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      countdownElement.innerHTML = `⏳ Promo ends in: ${days}d ${hours}h ${minutes}m ${seconds}s ⏳`;
+      countdownElement.innerHTML = `
+      <div class="countdown-title">📌 Coupon Expires In: ⏳</div>
+       <div class="countdown-timer">
+         <span class="countdown-unit days" data-label="Days">${days}</span>
+        <span class="countdown-unit hours" data-label="Hours">${hours}</span>
+        <span class="countdown-unit minutes" data-label="Minutes">${minutes}</span>
+        <span class="countdown-unit seconds" data-label="Seconds">${seconds}</span> 
+      </div>
+    `;
+
     }
 
     setInterval(updateCountdown, 1000);

@@ -147,12 +147,46 @@ header {
   background-color: #00337f;
 }
 
+/* Countdown Elements */
 .countdown {
   text-align: center;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #004aad;
-  margin-top: 1rem;
+  color: #004aad; /* Blue for main text */
+  margin-top: 0.75rem;
+}
+
+.countdown-title {
+  margin-bottom: 2px;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.countdown-unit {
+  position: relative;
+  font-size: 2rem;
+  color: rgb(209, 41, 41); /* Red for the numbers */
+  font-weight: bold;
+  padding: 10px 14px;
+  background: transparent;
+  border-radius: 8px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Data label styling with pseudo-elements */
+.countdown-unit::after {
+  content: attr(data-label);
+  display: block;
+  font-size: 0.8rem;
+  color: #004aad; /* Blue for the label text */
+  font-weight: normal;
+  margin-top: 4px;
+  text-align: center;
 }
 
 /* Business Description */
