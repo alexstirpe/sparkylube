@@ -30,8 +30,7 @@ body {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fff;
+  font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;  background: #fff;
   color: #222;
 }
 
@@ -269,6 +268,81 @@ footer {
 footer a {
   color: #ffcc00;
   text-decoration: none;
+}
+
+@media print {
+  /* General Reset for printing */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;  }
+
+  /* Hide unnecessary sections for printing */
+  #countdown, .map-wrapper, .business-desc, .print-btn {
+    display: none !important;
+  }
+
+  /* Ensure header is at the top */
+  header {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Call Section Adjustment */
+  .call-section {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adjust Promo section layout */
+  .promo-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-between; /* Space between items */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Promo boxes layout */
+  .promo-box {
+    flex: 0 1 30%; /* Ensure each promo item takes up ~30% of the width */
+    margin-bottom: 1px; /* Space between boxes */
+    page-break-inside: avoid; /* Prevent page breaks inside promo boxes */
+    display: inline-block; /* Ensure they align side by side */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ensure the promo images stay within the container */
+  .promo-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* Footer Styling */
+  footer {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* Remove page breaks from sections */
+  .promo-box, .call-section, footer {
+    page-break-after: avoid; /* Prevent forced breaks after each section */
+  }
+
+  /* Reset some extra padding/margins */
+  header, .call-section, .promo-items, footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ensure no extra breaks between the sections */
+  body {
+    overflow: visible !important;
+  }
 }
 
 /* Mobile Responsiveness */

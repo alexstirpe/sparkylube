@@ -55,8 +55,8 @@
   <div class="promo-items">
     <!-- Promo 1 -->
     <div class="promo-box">
-      <img src="assets/SL_Promo_April2025.png" alt="Promo Coupon" class="promo-img">
-      <button class="print-btn" onclick="window.print()">🖨️ Print/Save</button>
+      <img src="assets/SL_Promo_April2025.png" alt="Promo Coupon, 10 Dollars OFF" class="promo-img">
+      <button class="print-btn" onclick="printPage()" aria-label="Print this coupon">🖨️ Print/Save</button>
     </div>
 
     <!-- Promo 2 -->
@@ -66,7 +66,7 @@
 
     <!-- Promo 3 -->
     <div class="promo-box">
-      <img src="assets/B1G1Wiper.png" alt="B1G1 Wiper Blades" class="promo-img">
+      <img src="assets/B1G1Wiper.png" alt="B1G1 Wiper Blades Promo" class="promo-img">
     </div>
   </div>
 
@@ -108,7 +108,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>We're FASTER... And we're BETTER...</p>
+    <p>We're <strong>FASTER</strong>... And we're <strong>BETTER</strong>...</p>
     <p>275 King George, Brantford — <a href="tel:5197700777">519-770-0777</a></p>
     <p>  Copyright © 2025 Sparky Lube | All Rights Reserved.    </p>
   </footer>
@@ -145,6 +145,12 @@
     }
 
     setInterval(updateCountdown, 1000);
+
+    function printPage() {
+  // Open a print dialog
+  window.print();
+}
+
   </script>
 </body>
 </html>
